@@ -23,13 +23,18 @@
 
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
-            <div class="row">
+            <div class="row ">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
                     <img src="img/logo.png" class="image-fluid" />
                 </div>
                 <div class="col">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
+                </div>
+                <div class="col-md-4 col-xl-2 mt-4">
+                    <a href="#reserveForm" class="text-nowrap"> 
+                        <button class=" btn btn-info btn-lg">Reserve Campsite</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -82,7 +87,7 @@
                             shores of the pristine React Lake is
                             a favorite for fly fishers.</p>
                     </div>
-                    <img class="d-flex ml-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail Thumbnail">
+                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="Breadcrumb Trail Thumbnail">
                 </div>
             </div>
         </div>
@@ -96,31 +101,42 @@
                     <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
                         <div class="media-body align-self-center">
                             <h3>Bootstrap Outfitters</h3>
-                            <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't
-                                beat.</p>
+                            <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
                         </div>
                 </div>
             </div>
         </div>
         <div class="row row-content align-items-center">
-            <div col-sm-6 mx-auto>
+            <div class="col-sm-6 mx-auto">
                 <div class="card">
                     <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
                     <div class="card-body">
-                        <form>
-                            <div class="row">
-                                <label for="firstName" class="col-md-2 col-form-label"> Number of Campers </label>
-                                <select name="" id=""></select>
-                                <div class="col-md-10">
-                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                        <form id="reserveForm">
+                            <div class="form-group row">
+                                <label for="numCampers" class="col-6 col-sm-6 col-form-label">Number of Campers</label>
+                                <div class="col-sm-6">
+                                    <select class="col form-control" name="numCampers" id="numCampers">
+                                        <option value="">Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="row">                   
-                                <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
-                                <div class="col-md-10">
-                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                            <div class="form-group row">                   
+                                <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                <div class="col">
+                                    <input type="date" class="form-control" id="date" name="date" placeholder=""/>
                                 </div>
                             </div> 
+                            <div class="form-group-row">
+                                <div>
+                                    <button type="submit" class="btn btn-primary">Search</button>
+                                </div>
+                            </div>
                         </form>
                     </div>
 
