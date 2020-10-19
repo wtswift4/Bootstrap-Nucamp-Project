@@ -59,3 +59,10 @@ header h2 {
     background: #17a2b8;
     color: white;
 }
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
