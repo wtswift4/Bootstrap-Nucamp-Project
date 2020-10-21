@@ -44,11 +44,18 @@ header h2 {
     border: solid #5637DD;
 }
 
-.tab-content {
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+/* .tab-content {
     border: 1px solid #DDD;
     border-top: none;
     padding: 10px;
-}
+} */
 
 #loginModal .modal-header {
     background-color: #901CAD;
@@ -60,9 +67,3 @@ header h2 {
     color: white;
 }
 
-#carouselButton {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-}
