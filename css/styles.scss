@@ -3,6 +3,7 @@ $color-secondary: #5637dd;
 $color-pale: #CEC8FF;
 $color-mid: #901CAD;
 $color-dark: #60106b;
+$color-teal: #17a2b8;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
 
 $body-font: "Open Sans", sans-serif;
@@ -65,21 +66,19 @@ header {
         bottom: 0;
         z-index: 100;
     }
-    
-    /* .tab-content {
-        border: 1px solid #DDD;
-        border-top: none;
-        padding: 10px;
-    } */
-    
-    #loginModal .modal-header {
-        background-color: #901CAD;
+  
+    #loginModal {
+        .modal-header {
+        background-color: $color-mid;
         color: white;
+        }
     }
     
-    #reserveModal .modal-header {
-        background: #17a2b8;
+    #reserveModal {
+        .modal-header {
+        background: $color-teal;
         color: white;
+        }
     }
     
     
